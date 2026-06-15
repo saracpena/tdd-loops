@@ -63,7 +63,7 @@ describe("sumTo", function () {
   });
 });
 
-describe.only("sumFromTo", function () {
+describe("sumFromTo", function () {
   it("returns sum for a < z", function () {
     expect(sumFromTo(1, 3)).toBe(6);
   });
@@ -78,7 +78,7 @@ describe.only("sumFromTo", function () {
   });
 });
 
-describe("countdown", function () {
+describe.only("countdown", function () {
   // We're using some new techniques here to make sure that you're using
   // console.log correctly.
   // Don't worry about understanding this yet!
