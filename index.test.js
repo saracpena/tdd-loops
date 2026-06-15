@@ -48,7 +48,7 @@ describe("echoWithSpace", function () {
   });
 });
 
-describe.only("sumTo", function () {
+describe("sumTo", function () {
   it("returns sum for n > 1", function () {
     expect(sumTo(5)).toBe(15);
   });
@@ -63,7 +63,7 @@ describe.only("sumTo", function () {
   });
 });
 
-describe("sumFromTo", function () {
+describe.only("sumFromTo", function () {
   it("returns sum for a < z", function () {
     expect(sumFromTo(1, 3)).toBe(6);
   });

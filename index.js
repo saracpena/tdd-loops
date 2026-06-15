@@ -86,7 +86,14 @@ export function sumTo(n) {
  * sumFromTo(2, 2); // 2
  */
 export function sumFromTo(a, z) {
-  // TODO
+  let sum = 0;
+  let count = a;
+
+  while(count <= z) {
+    sum += count;
+    count++;
+  }
+  return sum;
 }
 
 /**
