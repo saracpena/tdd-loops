@@ -185,7 +185,16 @@ export function getGrowthTime(start, target) {
  * getCompoundTime(30000, 0.04, 50000); // 14
  */
 export function getCompoundTime(start, rate, target) {
-  // TODO
+  if (start <= 0 || rate <= 0) {
+    return undefined;
+  }
+  let years = 0;
+
+  while (start < target) {
+    start += start * rate;
+    years++;
+  }
+  return years;
 }
 
 /**
