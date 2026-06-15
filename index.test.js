@@ -78,7 +78,7 @@ describe("sumFromTo", function () {
   });
 });
 
-describe.only("countdown", function () {
+describe("countdown", function () {
   // We're using some new techniques here to make sure that you're using
   // console.log correctly.
   // Don't worry about understanding this yet!
@@ -111,7 +111,7 @@ describe.only("countdown", function () {
   });
 });
 
-describe("sumOddsToN", function () {
+describe.only("sumOddsToN", function () {
   it("returns sum of odds for n > 1", function () {
     expect(sumOddsToN(5)).toBe(9);
   });
