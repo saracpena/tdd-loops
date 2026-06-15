@@ -68,8 +68,9 @@ export function sumTo(n) {
 
   while (count <= n){
     sum += count;
+    count++;
   }
-  return count++;
+  return sum;
 }
 
 /**
