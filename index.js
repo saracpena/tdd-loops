@@ -11,7 +11,13 @@
  * echo("test", 1); // "test"
  */
 export function echo(word, n) {
-  // TODO
+  let result = "";
+  let count = 0;
+  while (count < n) {
+    result += word;
+    count++
+  }
+  return result;
 }
 
 /**
