@@ -33,7 +33,22 @@ export function echo(word, n) {
  * echoWithSpace("test", 1); // "test"
  */
 export function echoWithSpace(word, n) {
-  // TODO
+  if (word === "") {
+    return "";
+  }
+  
+  let result = "";
+  let count = 0;
+
+  while (count < n) {
+    result += word;
+
+    if (count < n - 1) {
+      result += " ";
+    }
+    count++;
+  }
+  return result;
 }
 
 /**
