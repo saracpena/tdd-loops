@@ -220,7 +220,24 @@ export function getCompoundTime(start, rate, target) {
  * moveWater(7, 3); // 1
  */
 export function moveWater(colander, bucket) {
-  // TODO
+  if (colander <= 0) {
+    return undefined;
+  }
+  if (bucket <= 0){
+    return 0;
+  }
+  let trips = 0;
+  let water = 0;
+
+  while (water < bucket) {
+    water += colander;
+    trips++;
+
+    if(colander > 1) {
+      colander--;
+    }
+  }
+  return trips;
 }
 
 /**
